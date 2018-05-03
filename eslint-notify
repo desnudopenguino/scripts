@@ -1,5 +1,4 @@
-#! /bin/env sh
-eslint $1
+#! /usr/bin/env sh
 while inotifywait -e modify $1; do
     eslint $1
 done
