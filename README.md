@@ -12,3 +12,15 @@ This script runs inotify that calls elsint on a file when it changes.
 
 ### Example
 `eslint-notify somefile.js`
+
+## i3lock-bg
+
+This script takes a screenshot of the current DE/WM, blurs it, and sets it as the i3lock background
+
+### Dependencies:
+- i3lock
+- ImageMagick
+- scrot
+
+### Example
+`i3lock-bg`
