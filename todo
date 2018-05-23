@@ -1,0 +1,72 @@
+#!/usr/bin/env sh
+function add {
+    item="- $*"
+    echo $item >> ~/todo.txt
+}
+
+function drop {
+    string="[-] $*"
+    grep -v "$string$" ~/todo.txt > ~/.todo.tmp && mv ~/.todo.tmp ~/todo.txt
+}
+
+function list {
+    cat ~/todo.txt
+}
+
+function edit {
+    vim ~/todo.txt
+}
+
+function search {
+    #echo "$*"
+    grep -n "$*" ~/todo.txt
+}
+
+function todo_top {
+    item="- $1"
+    echo $item > ~/.todo.tmp
+    cat ~/todo.txt >> ~/.todo.tmp
+    mv ~/.todo.tmp ~/todo.txt
+}
+
+function todo_done {
+    string="[-] $*"
+    echo $string
+    grep -v "$string$" ~/todo.txt > ~/.todo.tmp && mv ~/.todo.tmp ~/todo.txt
+    date=$(date +"%y-%m-%d %T")
+    done_string="$date- $*"
+    echo $done_string
+    echo $done_string >> ~/.done.txt
+}
+
+ if [[ $# -eq 0 ]]; then
+     list
+ fi
+case "$1" in
+    "add")
+        shift;
+        add "$*"
+        ;;
+    "drop")
+        shift;
+        drop "$*"
+        ;;
+    "done")
+        shift;
+        todo_done "$*"
+        ;;
+    "list")
+        list
+        ;;
+    "edit")
+        edit
+        ;;
+    "top")
+        shift;
+        todo_top "$*"
+        ;;
+    "srch")
+        shift;
+        search "$*"
+        ;;
+esac
