@@ -33,20 +33,14 @@ This is a set of shell functions to easily manage a simple text to-do list. It c
 - vim
 
 # Example(s)
-Put a new task (get to the choppa) at the top of the list
-`todo top get to the choppa`
+`todo top get to the choppa` - Put a new task (get to the choppa) at the top of the list
 
-Removes "some task" task from the list
-`todo drop some task`
+`todo drop some task` - Removes "some task" task from the list
 
-Moves "some task" task to the done list with the timestamp prepended
-`todo done some task`
+`todo done some task` - Moves "some task" task to the done list with the timestamp prepended
 
-Edit the list
-`todo edit`
+`todo edit` - Edit the list
 
-Print the list
-`todo list` or simply `todo`
+`todo list` or simply `todo` - Print the list
 
-Search for something
-`todo srch groceries`
+`todo srch groceries` - Search for something
