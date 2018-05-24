@@ -32,7 +32,7 @@ This is a set of shell functions to easily manage a simple text to-do list. It c
 ### Dependencies:
 - vim
 
-# Example(s)
+### Example(s)
 `todo top get to the choppa` - Put a new task (get to the choppa) at the top of the list
 
 `todo drop some task` - Removes "some task" task from the list
