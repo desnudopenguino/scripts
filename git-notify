@@ -1,0 +1,4 @@
+#! /usr/bin/env sh
+while inotifywait -e modify $1; do
+    git status
+done
