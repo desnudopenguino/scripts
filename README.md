@@ -44,3 +44,12 @@ This is a set of shell functions to easily manage a simple text to-do list. It c
 `todo list` or simply `todo` - Print the list
 
 `todo srch groceries` - Search for something
+
+
+## git-notify
+
+This script can be launched inside a git project, and when files change therein, it runs `git status` to get the new status and changes. 
+
+### Dependencies:
+ - git
+ - inotify-tools
