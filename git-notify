@@ -1,4 +1,5 @@
 #! /usr/bin/env sh
 while inotifywait -e modify -e create -e delete -e move ./; do
+    clear
     git status
 done
