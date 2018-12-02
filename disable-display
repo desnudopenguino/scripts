@@ -1,0 +1,4 @@
+#! /usr/bin/env sh
+if [[ -n $(xrandr | grep "$2 connected") ]]; then
+    xrandr --output $1 --off
+fi
