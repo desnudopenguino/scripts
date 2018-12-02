@@ -62,10 +62,10 @@ This script can be launched inside a git project, and when files change therein,
 
 This script will disable one display (arg 1) if another is connected (arg 2).
 
-## Dependencies:
+### Dependencies:
  - xrandr
  - a working X system
 
-## Example(s)
+### Example(s)
 `disable-display eDP HDMI-0` - disable eDP display if HDMI-0 is connected
 
