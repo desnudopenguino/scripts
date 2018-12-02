@@ -48,8 +48,24 @@ This is a set of shell functions to easily manage a simple text to-do list. It c
 
 ## git-notify
 
-This script can be launched inside a git project, and when files change therein, it runs `git status` to get the new status and changes. 
+This script can be launched inside a git project, and when files change therein, it runs `git status` to get the new status and changes.
 
 ### Dependencies:
  - git
  - inotify-tools
+
+### Example(s)
+`git-notify`
+
+
+## disable-display
+
+This script will disable one display (arg 1) if another is connected (arg 2).
+
+## Dependencies:
+ - xrandr
+ - a working X system
+
+## Example(s)
+`disable-display eDP HDMI-0` - disable eDP display if HDMI-0 is connected
+
