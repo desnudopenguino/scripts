@@ -69,3 +69,13 @@ This script will disable one display (arg 1) if another is connected (arg 2).
 ### Example(s)
 `disable-display eDP HDMI-0` - disable eDP display if HDMI-0 is connected
 
+## win-rdp
+
+This script allows for RDP connections to a MS Windows box, which can be executed via rofi or a similar tool. You must configure `pass` to allow for password retrieval, and configure the script with your Windows ip and username (and any other FreeRDP settings).
+
+### Dependencies
+ - freerdp
+ - pass
+
+### Example(s)
+`win-rdp` - connects to the RDP host. it may require input for the `pass` password.
