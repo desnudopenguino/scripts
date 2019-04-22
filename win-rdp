@@ -1,0 +1,2 @@
+#! /usr/bin/env sh
+xfreerdp +clipboard +fonts /w:1920 /h:1080 /u:<username> /p:`pass rdp` /v:<ip/machine name> /smart-sizing /audio-mode:0
