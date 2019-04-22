@@ -34,7 +34,7 @@ function todo_done {
     echo $string
     grep -v "$string$" ~/todo.txt > ~/.todo.tmp && mv ~/.todo.tmp ~/todo.txt
     date=$(date +"%y-%m-%d %T")
-    done_string="$date- $*"
+    done_string="$date $*"
     echo $done_string
     echo $done_string >> ~/.done.txt
 }
